@@ -14,6 +14,7 @@
                 "src/expat/lib",
             ],
             "defines":[
+                'HAVE_GETRANDOM'
             ],
             'direct_dependent_settings': {
                 'include_dirs': [
