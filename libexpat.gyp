@@ -12,9 +12,13 @@
             ],
             'include_dirs':[
                 "src/expat/lib",
+                
+                "config/<(OS)/<(target_arch)",
+                "config/<(OS)",
+                "config",
             ],
             "defines":[
-                'HAVE_GETRANDOM'
+                'HAVE_EXPAT_CONFIG_H',
             ],
             'direct_dependent_settings': {
                 'include_dirs': [
@@ -32,6 +36,9 @@
 						'libraries':[
 						],
 					},
+                    'cflags':[
+				        '-fPIC',
+                    ]
 				}],
 				['OS == "win"',{
                     'sources':[
