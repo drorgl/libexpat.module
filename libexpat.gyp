@@ -97,7 +97,6 @@
 			],
 			'cflags':[
 				'-fPIC',
-				'-std=c++11',
 				'-fexceptions',
 			],
 			'cflags!': [ '-fno-exceptions' ],
